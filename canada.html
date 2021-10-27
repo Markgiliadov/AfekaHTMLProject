@@ -4,27 +4,11 @@
   </head>
   <body style="background-color: rgb(119, 90, 90)">
     <div>
-      <h3
-        style="
-          background: #df825d;
-          color: rgb(226, 219, 128);
-          font-size: 35px;
-          border-bottom-left-radius: 50%;
-          border-bottom-right-radius: 50%;
-          border-top-left-radius: 35%;
-          border-top-right-radius: 35%;
-          text-align: center;
-          padding: 2%;
-          height: 40px;
-        "
-      >
-        <label> Top 5 places in the world for me! </label>
-      </h3>
       <table style="width: 100%; height: 10%">
         <td
           id="CA"
           style="
-            background: #df825d;
+            background: #a55130;
             color: rgb(226, 219, 128);
             font-size: 35px;
             border-bottom-left-radius: 5%;
@@ -38,144 +22,22 @@
         >
           Canada
         </td>
-        <td
-          id="RU"
-          style="
-            background: #df825d;
-            color: rgb(226, 219, 128);
-            font-size: 35px;
-            border-bottom-left-radius: 5%;
-            border-bottom-right-radius: 5%;
-            border-top-left-radius: 3%;
-            border-top-right-radius: 3%;
-            text-align: center;
-            padding: 2%;
-            width: 20%;
-          "
-        >
-          Russia
-        </td>
-        <td
-          id="IT"
-          style="
-            background: #df825d;
-            color: rgb(226, 219, 128);
-            font-size: 35px;
-            border-bottom-left-radius: 5%;
-            border-bottom-right-radius: 5%;
-            border-top-left-radius: 3%;
-            border-top-right-radius: 3%;
-            text-align: center;
-            padding: 2%;
-            width: 20%;
-          "
-        >
-          Italia
-        </td>
-        <td
-          id="US"
-          style="
-            background: #df825d;
-            color: rgb(226, 219, 128);
-            font-size: 35px;
-            border-bottom-left-radius: 5%;
-            border-bottom-right-radius: 5%;
-            border-top-left-radius: 3%;
-            border-top-right-radius: 3%;
-            text-align: center;
-            padding: 2%;
-            width: 20%;
-          "
-        >
-          America
-        </td>
-        <td
-          id="JP"
-          style="
-            background: #df825d;
-            color: rgb(226, 219, 128);
-            font-size: 35px;
-            border-bottom-left-radius: 5%;
-            border-bottom-right-radius: 5%;
-            border-top-left-radius: 3%;
-            border-top-right-radius: 3%;
-            text-align: center;
-            padding: 2%;
-            width: 20%;
-          "
-        >
-          <a href="https://www.w3schools.com" /> Japand
-        </td>
       </table>
+      <br>
       <img
-        src="map.jpg"
-        style="width: max-content; max-width: 100%; border-radius: 50%"
-        usemap="#world"
+        src="canada1.jpg"
+        style="width: 40%;"
       />
-      <map name="world">
-        <area
-          onmouseover="onFocus(event)"
-          onmouseout="onLeave(event)"
-          name="CA"
-          shape="circle"
-          coords="410,90,100"
-          href="https://www.google.com/search?q=canada"
-          alt="canada"
-          target="_blank"
-        />
-        <area
-          onmouseover="onFocus(event)"
-          onmouseout="onLeave(event)"
-          name="RU"
-          shape="circle"
-          coords="970,30,180"
-          href="https://www.google.com/search?q=russia"
-          alt="russia"
-          target="_blank"
-        />
-        <area
-          onmouseover="onFocus(event)"
-          onmouseout="onLeave(event)"
-          name="IT"
-          shape="circle"
-          coords="750,180,30"
-          href="https://www.google.com/search?q=italia"
-          alt="italia"
-          target="_blank"
-        />
-        <area
-          onmouseover="onFocus(event)"
-          onmouseout="onLeave(event)"
-          name="US"
-          shape="circle"
-          coords="360,220,100"
-          href="https://www.google.com/search?q=america"
-          alt="america"
-          target="_blank"
-        />
-        <area
-          onmouseover="onFocus(event)"
-          onmouseout="onLeave(event)"
-          name="JP"
-          shape="circle"
-          coords="1240,170,80"
-          href="https://www.google.com/search?q=japan"
-          alt="v"
-          target="_blank"
-        />
-      </map>
+      <img
+        src="canada2.jpg"
+        style="width: 40%;"
+      />
+    </br>
+      <p style="width: 70%;">
+        Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres (3.85 million square miles), making it the world's second-largest country by total area. Its southern and western border with the United States, stretching 8,891 kilometres (5,525 mi), is the world's longest bi-national land border. Canada's capital is Ottawa, and its three largest metropolitan areas are Toronto, Montreal, and Vancouver.
+
+        Indigenous peoples have continuously inhabited what is now Canada for thousands of years. Beginning in the 16th century, British and French expeditions explored and later settled along the Atlantic coast. As a consequence of various armed conflicts, France ceded nearly all of its colonies in North America in 1763. In 1867, with the union of three British North American colonies through Confederation, Canada was formed as a federal dominion of four provinces. This began an accretion of provinces and territories and a process of increasing autonomy from the United Kingdom. This widening autonomy was highlighted by the Statute of Westminster 1931 and culminated in the Canada Act 1982, which severed the vestiges of legal dependence on the Parliament of the United Kingdom.      </p>
     </div>
-    <script>
-      const onFocus = (event) => {
-        document.getElementById(
-          event.target.getAttribute("name")
-        ).style.backgroundColor = "white";
-      };
-      const onLeave = (event) => {
-        document.getElementById(
-          event.target.getAttribute("name")
-        ).style.backgroundColor = "#df825d";
-      };
-    </script>
+  </table>
   </body>
 </html>
