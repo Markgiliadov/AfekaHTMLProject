@@ -1,0 +1,181 @@
+<html style="width: 1500px; height: 900px">
+  <head>
+    <title>A map</title>
+  </head>
+  <body style="background-color: rgb(119, 90, 90)">
+    <div>
+      <h3
+        style="
+          background: #df825d;
+          color: rgb(226, 219, 128);
+          font-size: 35px;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          border-top-left-radius: 35%;
+          border-top-right-radius: 35%;
+          text-align: center;
+          padding: 2%;
+          height: 40px;
+        "
+      >
+        <label> Top 5 places in the world for me! </label>
+      </h3>
+      <table style="width: 100%; height: 10%">
+        <td
+          id="CA"
+          style="
+            background: #df825d;
+            color: rgb(226, 219, 128);
+            font-size: 35px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            text-align: center;
+            padding: 2%;
+            width: 20%;
+          "
+        >
+          Canada
+        </td>
+        <td
+          id="RU"
+          style="
+            background: #df825d;
+            color: rgb(226, 219, 128);
+            font-size: 35px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            text-align: center;
+            padding: 2%;
+            width: 20%;
+          "
+        >
+          Russia
+        </td>
+        <td
+          id="IT"
+          style="
+            background: #df825d;
+            color: rgb(226, 219, 128);
+            font-size: 35px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            text-align: center;
+            padding: 2%;
+            width: 20%;
+          "
+        >
+          Italia
+        </td>
+        <td
+          id="US"
+          style="
+            background: #df825d;
+            color: rgb(226, 219, 128);
+            font-size: 35px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            text-align: center;
+            padding: 2%;
+            width: 20%;
+          "
+        >
+          America
+        </td>
+        <td
+          id="JP"
+          style="
+            background: #df825d;
+            color: rgb(226, 219, 128);
+            font-size: 35px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            text-align: center;
+            padding: 2%;
+            width: 20%;
+          "
+        >
+          <a href="https://www.w3schools.com" /> Japand
+        </td>
+      </table>
+      <img
+        src="map.jpg"
+        style="width: max-content; max-width: 100%; border-radius: 50%"
+        usemap="#world"
+      />
+      <map name="world">
+        <area
+          onmouseover="onFocus(event)"
+          onmouseout="onLeave(event)"
+          name="CA"
+          shape="circle"
+          coords="410,90,100"
+          href="https://www.google.com/search?q=canada"
+          alt="canada"
+          target="_blank"
+        />
+        <area
+          onmouseover="onFocus(event)"
+          onmouseout="onLeave(event)"
+          name="RU"
+          shape="circle"
+          coords="970,30,180"
+          href="https://www.google.com/search?q=russia"
+          alt="russia"
+          target="_blank"
+        />
+        <area
+          onmouseover="onFocus(event)"
+          onmouseout="onLeave(event)"
+          name="IT"
+          shape="circle"
+          coords="750,180,30"
+          href="https://www.google.com/search?q=italia"
+          alt="italia"
+          target="_blank"
+        />
+        <area
+          onmouseover="onFocus(event)"
+          onmouseout="onLeave(event)"
+          name="US"
+          shape="circle"
+          coords="360,220,100"
+          href="https://www.google.com/search?q=america"
+          alt="america"
+          target="_blank"
+        />
+        <area
+          onmouseover="onFocus(event)"
+          onmouseout="onLeave(event)"
+          name="JP"
+          shape="circle"
+          coords="1240,170,80"
+          href="https://www.google.com/search?q=japan"
+          alt="v"
+          target="_blank"
+        />
+      </map>
+    </div>
+    <script>
+      const onFocus = (event) => {
+        document.getElementById(
+          event.target.getAttribute("name")
+        ).style.backgroundColor = "white";
+      };
+      const onLeave = (event) => {
+        document.getElementById(
+          event.target.getAttribute("name")
+        ).style.backgroundColor = "#df825d";
+      };
+    </script>
+  </body>
+</html>
